@@ -6,10 +6,4 @@ About this site
 
 ```{r}
 1 + 1
-library(tidyverse)
-glimpse(mtcars)
-mtcars %>% 
-  ggplot(aes(x=wt, y=mpg)) +
-  geom_point() +
-  labs(x='Weight of Car', y='Fuel Efficiency (MPG)')
 ```
