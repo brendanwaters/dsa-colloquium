@@ -1,5 +1,5 @@
 ---
-title: "to_be_deleted"
+title: "Cool Graph"
 ---
 
 This is a Quarto website.
@@ -8,4 +8,11 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
 1 + 1
+
+library(tidyverse)
+glimpse(mtcars)
+mtcars %>% 
+  ggplot(aes(x=wt, y=mpg)) +
+  geom_point() +
+  labs(x='Weight of Car', y='Fuel Efficiency (MPG)')
 ```
